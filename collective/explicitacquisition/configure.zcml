@@ -1,2 +1,6 @@
-  <subscriber handler=".events.avoid_acquired_content" />
+<configure xmlns="http://namespaces.zope.org/zope">
 
+  <include package="Products.CMFPlone"/>
+  <subscriber handler=".events.avoid_acquired_content"/>
+
+</configure>

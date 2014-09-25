@@ -1,11 +1,8 @@
-from zExceptions import NotFound
-from ZPublisher.interfaces import IPubAfterTraversal
-
-from zope.component import adapter
+from .interfaces import IPublishableThroughAcquisition
 from Products.CMFCore.interfaces import IContentish
-
-from Products.CMFPlone.interfaces import IPublishableThroughAcquisition
-
+from ZPublisher.interfaces import IPubAfterTraversal
+from zExceptions import NotFound
+from zope.component import adapter
 
 
 @adapter(IPubAfterTraversal)

@@ -1,11 +1,8 @@
-import unittest
-from urllib2 import HTTPError
-
-from zope.interface import alsoProvides
-
-from plone.testing.z2 import Browser
-
 from Products.CMFPlone.testing import PRODUCTS_CMFPLONE_FUNCTIONAL_TESTING
+from plone.testing.z2 import Browser
+from urllib2 import HTTPError
+from zope.interface import alsoProvides
+import unittest
 
 
 class TestBadAcquisition(unittest.TestCase):
