@@ -33,7 +33,7 @@ setup(
     ],
     extras_require={
         'test': [
-            'plone.testing',
+            'Products.CMFPlone[test]'
         ]
     },
     entry_points="""

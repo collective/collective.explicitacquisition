@@ -1,13 +1,15 @@
-from Products.CMFPlone.testing import PRODUCTS_CMFPLONE_FUNCTIONAL_TESTING
+# from Products.CMFPlone.testing import PRODUCTS_CMFPLONE_FUNCTIONAL_TESTING
+
 from plone.testing.z2 import Browser
 from urllib2 import HTTPError
 from zope.interface import alsoProvides
 import unittest
+from collective.explicitacquisition.testing import BASE_FUNCTIONAL_TESTING
 
 
 class TestBadAcquisition(unittest.TestCase):
 
-    layer = PRODUCTS_CMFPLONE_FUNCTIONAL_TESTING
+    layer = BASE_FUNCTIONAL_TESTING
 
     def setUp(self):
         self.portal = self.layer['portal']
@@ -59,7 +61,10 @@ class TestBadAcquisition(unittest.TestCase):
         self.portal.invokeFactory('Document', 'a_page')
         self.assertTrue('a_page' in self.portal.objectIds())
         a_page = self.portal['a_page']
-        from Products.CMFPlone.interfaces import IPublishableThroughAcquisition
+        try:
+            from Products.CMFPlone.interfaces import IPublishableThroughAcquisition
+        except ImportError:
+            from collective.explicitacquisition.interfaces import IPublishableThroughAcquisition
         alsoProvides(a_page, IPublishableThroughAcquisition)
         self.portal.invokeFactory('Folder', 'a_folder')
         self.assertTrue('a_folder' in self.portal.objectIds())
