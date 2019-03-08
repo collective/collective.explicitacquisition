@@ -7,7 +7,9 @@ bin/
 develop-eggs/
 dist/
 eggs/
+lib/
 parts/
 src/
 var/
+pyvenv.cfg
 !.gitignore
