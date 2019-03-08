@@ -23,12 +23,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
-        'Products.CMFCore',
         'Products.CMFPlone',
-        'Zope2',  # ZPublisher
-        'zExceptions',
-        'zope.component',
-        'zope.interface',
     ],
     extras_require={
         'test': [
