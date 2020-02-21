@@ -4,7 +4,8 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Support Python 3 on Plone 5.2.x+
+  [spereverde]
 
 
 1.1 (2015-02-18)
