@@ -7,7 +7,10 @@ bin/
 develop-eggs/
 dist/
 eggs/
+lib/
 parts/
 src/
 var/
+pip-selfcheck.json
+pyvenv.cfg
 !.gitignore

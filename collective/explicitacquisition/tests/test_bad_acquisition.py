@@ -1,10 +1,9 @@
-# from Products.CMFPlone.testing import PRODUCTS_CMFPLONE_FUNCTIONAL_TESTING
-
-from plone.testing.z2 import Browser
-from urllib2 import HTTPError
-from zope.interface import alsoProvides
 import unittest
+
 from collective.explicitacquisition.testing import BASE_FUNCTIONAL_TESTING
+from plone.testing.z2 import Browser
+from six.moves.urllib.error import HTTPError
+from zope.interface import alsoProvides
 
 
 class TestBadAcquisition(unittest.TestCase):
@@ -29,7 +28,7 @@ class TestBadAcquisition(unittest.TestCase):
         try:
             url = self.portal.absolute_url() + '/a_folder/a_page'
             browser.open(url)
-        except HTTPError, e:
+        except HTTPError as e:
             error = e
         self.assertTrue(
             error is not None,
@@ -50,7 +49,7 @@ class TestBadAcquisition(unittest.TestCase):
         try:
             url = self.portal.absolute_url() + '/a_folder/a_page/document_view'
             browser.open(url)
-        except HTTPError, e:
+        except HTTPError as e:
             error = e
         self.assertTrue(
             error is not None,
@@ -76,6 +75,6 @@ class TestBadAcquisition(unittest.TestCase):
         try:
             url = self.portal.absolute_url() + '/a_folder/a_page'
             browser.open(url)
-        except HTTPError, e:
+        except HTTPError as e:
             error = e
         self.assertTrue(error is None)

@@ -1,5 +1,4 @@
-from setuptools import setup
-from setuptools import find_packages
+from setuptools import find_packages, setup
 
 version = '1.2.dev0'
 description = open("README.rst").read() + "\n" + open("CHANGES.rst").read()
@@ -24,12 +23,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
-        'Products.CMFCore',
         'Products.CMFPlone',
-        'Zope2',  # ZPublisher
-        'zExceptions',
-        'zope.component',
-        'zope.interface',
     ],
     extras_require={
         'test': [
