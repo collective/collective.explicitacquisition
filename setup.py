@@ -13,6 +13,7 @@ setup(
         "Framework :: Plone :: Addon",
         "Framework :: Plone :: 5.1",
         "Framework :: Plone :: 5.2",
+        "Framework :: Plone :: Addon",
         "Programming Language :: Python",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
