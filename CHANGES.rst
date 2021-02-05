@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.0 (unreleased)
+2.0 (2021-02-05)
 ----------------
 
 - Update package (black, isort, structure) [jensens]
