@@ -9,9 +9,11 @@ setup(
     description="Disallow access to acquired content outside the current path.",  # noqa
     long_description=description,
     classifiers=[
+        "Framework :: Zope",
+        "Framework :: Zope :: 4",
+        "Framework :: Zope :: 5",
         "Framework :: Plone",
         "Framework :: Plone :: Addon",
-        "Framework :: Plone :: 5.1",
         "Framework :: Plone :: 5.2",
         "Framework :: Plone :: 6.0",
         "Programming Language :: Python",
@@ -35,11 +37,11 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
-        'Products.CMFPlone',
+        'Products.CMFCore',
     ],
     extras_require={
         'test': [
-            'Products.CMFPlone[test]'
+            'plone.app.testing'
         ]
     },
     entry_points="""
