@@ -41,7 +41,7 @@ setup(
         "setuptools",
         "Products.CMFCore",
     ],
-    extras_require={"test": ["plone.app.testing[robot]"]},
+    extras_require={"test": ["plone.app.testing[robot]", "plone.app.robotframework"]},
     entry_points="""
     [z3c.autoinclude.plugin]
     target = plone
