@@ -26,6 +26,13 @@ jobs:
           update-setuptools: "false"
           update-pip: "true"
           update-wheel: "true"
+      - name: Cache eggs
+        uses: actions/cache@v2
+        with:
+          path: |
+            eggs
+          key: eggs-${{ matrix.python-version }}
+          restore-keys: eggs-
       - name: "Buildout"
         run: |
           buildout -c testing.cfg

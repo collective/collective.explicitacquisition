@@ -24,7 +24,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
-        "Environment :: Web Environment",        
+        "Environment :: Web Environment",
     ],
     keywords='traversal acquisition',
     author='Godefroid Chapelle, Johannes Raggam',
@@ -41,7 +41,7 @@ setup(
     ],
     extras_require={
         'test': [
-            'plone.app.testing'
+            'plone.app.testing[robot]'
         ]
     },
     entry_points="""
