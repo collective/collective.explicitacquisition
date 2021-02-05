@@ -1,8 +1,10 @@
 Changelog
 =========
 
-1.2 (unreleased)
+2.0 (unreleased)
 ----------------
+
+- Drop support of Python 2.7 [jensens]
 
 - Support Python 3 on Plone 5.2.x+
   [spereverde]
