@@ -9,7 +9,7 @@ from .interfaces import IPublishableThroughAcquisition
 @adapter(IPubAfterTraversal)
 def avoid_acquired_content(event):
     request = event.request
-    parents = request['PARENTS']
+    parents = request["PARENTS"]
     context = parents[0]
     if IPublishableThroughAcquisition.providedBy(context):
         return
