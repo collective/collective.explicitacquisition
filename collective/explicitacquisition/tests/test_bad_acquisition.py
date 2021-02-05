@@ -1,9 +1,9 @@
-import unittest
-
 from collective.explicitacquisition.testing import BASE_FUNCTIONAL_TESTING
 from plone.testing.z2 import Browser
 from six.moves.urllib.error import HTTPError
 from zope.interface import alsoProvides
+
+import unittest
 
 
 class TestBadAcquisition(unittest.TestCase):
