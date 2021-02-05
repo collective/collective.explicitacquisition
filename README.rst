@@ -34,6 +34,6 @@ This package is a repackaging of Godfroid Chapelle's (`gotcha <https://github.co
 Further contributors:
 
 - Johannes Raggam (`thetet <https://github.com/thet>`_)
-- Kim Paulissen (`spereverde <https://github.com/spereverde>`_
+- Kim Paulissen (`spereverde <https://github.com/spereverde>`_)
 - Maik Derstappen (`MrTango <https://github.com/MrTango>`_)
 - Jens Klein (`jensens <https://github.com/jensens>`_)
