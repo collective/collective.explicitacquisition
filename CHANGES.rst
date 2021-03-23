@@ -4,7 +4,9 @@ Changelog
 2.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Redirect to first site root when you have multiple sites in the path.
+  This avoids rendering parts of site2, including using its language and navigation, when you access url site1/site2.
+  [maurits]
 
 
 2.0 (2021-02-05)
